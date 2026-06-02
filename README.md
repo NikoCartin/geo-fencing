@@ -23,7 +23,7 @@ Este repositorio contiene el aporte para redirigir visitantes desde el sitio pri
 Inserta este script en el `<head>` o justo antes de cerrar `</body>`:
 
 ```html
-<script src="https://TU-DOMINIO/geo-redirect.js"></script>
+<script src="https://your-domain.com/geo-redirect.js"></script>
 ```
 
 O copia el contenido del archivo directamente en un bloque `<script>`.

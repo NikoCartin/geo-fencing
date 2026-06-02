@@ -6,6 +6,9 @@
   var path = window.location.pathname;
   var search = window.location.search;
   var redirectKey = 'geoRedirectDone_' + currentHost;
+  var normalizeHost = function (host) {
+    return host.replace(/^www\./, '');
+  };
 
   // Avoid repeated redirect checks in the same session on the same host
   if (sessionStorage.getItem(redirectKey) === 'true') return;
@@ -35,7 +38,7 @@
       }
 
       // If already on the correct host, stop here
-      if (currentHost === targetHost || currentHost === targetHost.replace('www.', '')) {
+      if (normalizeHost(currentHost) === normalizeHost(targetHost)) {
         sessionStorage.setItem(redirectKey, 'true');
         return;
       }
