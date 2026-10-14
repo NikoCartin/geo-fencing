@@ -1,5 +1,10 @@
 # Geo Fencing
 
+<p align="center">
+  <img src="assets/geo-fencing-banner.png" alt="Geo-Fencing multi-storefront routing" width="100%"/>
+</p>
+
+
 Geo-location redirect logic for multi-storefront setups like Shopify.
 
 ## What it does
